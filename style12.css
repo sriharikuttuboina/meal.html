@@ -1,0 +1,121 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    height: 80px;
+}
+
+
+.logo1 {
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+
+#menu-btn {
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: azure;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+
+#side-menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+    display: block;
+    transition: 0.2s;
+}
+
+#side-menu a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: aqua;
+    font-size: 35px;
+    cursor: pointer;
+}
+.banner{
+    background-image: url("./images1/food.jpg");
+    background-size: cover;
+}
+.banner-text{
+    padding:8%;
+    background-repeat: no-repeat;
+    margin-left: 300px;
+    font-size: x-large;
+    color: white;
+
+}
+.banner-menu{
+    margin-top: 50px;
+    margin-top: 75px;
+    color: white;
+}
+
+input{
+    height:40px;
+    width:300px;
+    border-radius: 50px;
+}
+.p1{
+    height: 20px;
+    font-size: 200%;
+    font-weight: 100;
+    margin-left: -100px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.img{
+    width:250px;
+}
+
+ /* @media (max-width: 768px) {
+    .navbar1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #menu-btn {
+        margin-right: 0;
+        font-size: 24px;
+    }
+}  */

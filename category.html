@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    height: 80px;
+}
+
+
+.logo1 {
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+
+#menu-btn {
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: azure;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+
+#side-menu a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+    display: block;
+    transition: 0.2s;
+}
+
+#side-menu a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: aqua;
+    font-size: 35px;
+    cursor: pointer;
+}
+.banner{
+    background-image: url("./images1/food.jpg");
+    background-size: cover;
+}
+.banner-text{
+    padding:8%;
+    background-repeat: no-repeat;
+    margin-left: 300px;
+    font-size: x-large;
+    color: white;
+
+}
+.banner-menu{
+    margin-top: 50px;
+    margin-top: 75px;
+    color: white;
+}
+
+input{
+    height:40px;
+    width:300px;
+    border-radius: 50px;
+}
+.p1{
+    height: 20px;
+    font-size: 200%;
+    font-weight: 100;
+    margin-left: -100px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.img{
+
+    width:250px;
+}
+
+.categories-details {
+    margin-top: 80px;
+    border: 2px solid #e16120;
+    width: 80%;
+    display: flex;
+    
+    padding: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.category-name {
+    color: #e16120;
+    margin-bottom: 20px;
+}
+.description {
+   color:black;
+}
+    </style>
+    <header>
+        <div class="navbar1">
+            <div class="logo1">
+                <i class="fa-solid fa-utensils"></i>
+                MEAL FINDER
+            </div>
+            <i id="menu-btn" class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <nav id="side-menu">
+            <div id="close-btn">&times;</div>
+            <!-- <i class="fas fa-search"></i>  -->
+            <section class="drop">
+                <ul>
+                    <li><a href="#">BEEF</a></li>
+                    <li><a href="#">CHICKEN</a></li>
+                    <li><a href="#">DESSERT</a></li>
+                    <li><a href="#">LAMB</a></li>
+                    <li><a href="#">MISCELLANEOUS</a></li>
+                    <li><a href="#">PASTA</a></li>
+                    <li><a href="#">PORK</a></li>
+                    <li><a href="#">SEAFOOD</a></li>
+                    <li><a href="#">SIDE</a></li>
+                    <li><a href="#">STARTER</a></li>
+                    <li><a href="#">VEGAN</a></li>
+                    <li><a href="#">VEGETARIAN</a></li>
+                    <li><a href="#">BREAKFAST</a></li>
+                    <li><a href="#">GOAT</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="banner-text">
+            <input type="text" placeholder="search recipes here" id="search-bar">
+            <i class="fa-solid fa-magnifying-glass" style="color: white; background-color: orangered;"></i>
+            <div class="banner-name">
+                <p class="p1">What are your favorite cuisines?</p>
+                <p class="p2">PERSONALIZE YOUR EXPERIENCE</p>
+            </div>
+        </div> 
+    </div>
+    <div class="categories-details">
+       <div>
+        <h4 class="category-name"><h4>
+         <p class="description"><p>   
+       </div>
+    </div>
+    
+    <div class="items-list">
+        <h4 class="categ-head"><span class="underline">MEAL</span></h4>
+        <div id="meal-items" class="meal-items"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
